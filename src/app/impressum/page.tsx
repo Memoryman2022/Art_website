@@ -37,6 +37,38 @@ export default function Impressum() {
       subject to copyright law. The reproduction, processing, distribution, and
       any kind of use outside the limits of copyright law require written
       consent from the author or creator.
+      <br />
+      <br />
+      <div>
+        <br />
+        Deine Zahlung auf unserer Webseite per Kreditkarte oder per Lastschrift
+        wird abgewickelt durch:
+        <br />
+        <br />
+        PayPal (Europe) S.à r.l. et Cie, S.C.A.
+        <br />
+        22-24 Boulevard Royal
+        <br />
+        L-2449 Luxembourg
+        <br />
+        E-Mail: impressum@paypal.com
+        <br />
+        <br />
+        Handelsregisternummer: R.C.S. Luxembourg B 118 349
+        <br />
+        Persönlich haftende Gesellschafterin der PayPal (Europe) S.à r.l. et
+        Cie, S.C.A.: PayPal (Europe) S.à r.l.,
+        <br />
+        Handelsregisternummer: R.C.S Luxembourg B 127 485
+        <br />
+        Conseil de gérance der PayPal (Europe) S.à r.l.: David Engel, David
+        Ferri, Rupert Keeley, Sean Byrne
+        <br />
+        <br />
+        PayPal (Europe) S.à r.l. et Cie, S.C.A. wird EU-weit als Bank geführt.
+        Aufsichtsbehörde ist die luxemburgische Bankenaufsicht CSSF (Commission
+        de Surveillance du Secteur Financier).
+      </div>
     </div>
   );
 }
