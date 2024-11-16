@@ -12,7 +12,9 @@ export default function Footer() {
           width={28}
           height={28}
         />
-        <Link href="/contact">Contact</Link>
+        <Link href="/contact" className="hidden md:block">
+          Contact
+        </Link>
       </nav>
       <nav className="flex gap-4">
         <Image
@@ -22,7 +24,9 @@ export default function Footer() {
           width={28}
           height={28}
         />
-        <Link href="/legal">legal</Link>
+        <Link href="/legal" className="hidden md:block">
+          legal
+        </Link>
       </nav>
       <a
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -37,7 +41,7 @@ export default function Footer() {
           width={16}
           height={16}
         />
-        Go to nextjs.org →
+        <span className="hidden md:inline">Go to nextjs.org →</span>{" "}
       </a>
     </footer>
   );

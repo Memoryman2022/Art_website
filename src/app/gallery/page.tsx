@@ -4,6 +4,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "components/ui/accordion";
+import Oils from "app/oils/page";
 
 export default function Gallery() {
   return (
@@ -12,17 +13,19 @@ export default function Gallery() {
         <Accordion
           type="single"
           collapsible
-          className="w-full max-w-2xl border-2 border-black "
+          className="w-full max-w-2xl border-2 border-black m-0"
         >
           {/* Oil Section */}
           <AccordionItem
             value="Oil"
-            className="border-b-2 border-black  mb-2 px-4"
+            className="border-b-2 border-black  mb-2 px-0"
           >
             <AccordionTrigger className="text-black flex justify-between items-center hover:no-underline">
               Oil
             </AccordionTrigger>
-            <AccordionContent className="overflow-hidden transition-all duration-500 ease-in-out"></AccordionContent>
+            <AccordionContent className="overflow-hidden transition-all duration-500 ease-in-out">
+              <Oils />
+            </AccordionContent>
           </AccordionItem>
 
           {/* Acrylic Section */}
