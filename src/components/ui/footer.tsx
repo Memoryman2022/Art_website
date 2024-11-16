@@ -9,15 +9,15 @@ export default function Footer() {
           aria-hidden
           src="/contact.png"
           alt="Globe icon"
-          width={35}
-          height={35}
+          width={28}
+          height={28}
         />
         <Link href="/contact">Contact</Link>
       </nav>
       <nav className="flex gap-4">
         <Image
           aria-hidden
-          src="/impressum.png"
+          src="/legal.png"
           alt="Globe icon"
           width={28}
           height={28}

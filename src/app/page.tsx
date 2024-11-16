@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { cn } from "app/lib/utils";
 import classes from "./myCss.module.css";
+import Link from "next/link";
 //components
 
 import {
@@ -23,7 +24,9 @@ export default function Home() {
         <Menubar>
           <MenubarMenu>
             <MenubarTrigger>File</MenubarTrigger>
-            <MenubarTrigger>File</MenubarTrigger>
+            <MenubarTrigger asChild>
+              <Link href="/gallery">Gallery</Link>
+            </MenubarTrigger>
             <MenubarContent>
               <MenubarItem>
                 New Tab <MenubarShortcut>⌘T</MenubarShortcut>

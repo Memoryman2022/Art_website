@@ -4,11 +4,8 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "components/ui/accordion";
-//components
-import Impressum from "app/impressum/page";
-import AGB from "AGB/agb";
 
-export default function Legal() {
+export default function Gallery() {
   return (
     <div className="min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main>
@@ -17,48 +14,37 @@ export default function Legal() {
           collapsible
           className="w-full max-w-2xl border-2 border-black "
         >
-          {/* Impressum Section */}
+          {/* Oil Section */}
           <AccordionItem
-            value="impressum"
+            value="Oil"
             className="border-b-2 border-black  mb-2 px-4"
           >
             <AccordionTrigger className="text-black flex justify-between items-center hover:no-underline">
-              Impressum
+              Oil
             </AccordionTrigger>
-            <AccordionContent className="overflow-hidden transition-all duration-500 ease-in-out">
-              {/* Display Impressum component when this accordion is clicked */}
-              <Impressum />
-            </AccordionContent>
+            <AccordionContent className="overflow-hidden transition-all duration-500 ease-in-out"></AccordionContent>
           </AccordionItem>
 
-          {/* AGB Section */}
+          {/* Acrylic Section */}
           <AccordionItem
-            value="agb"
+            value="Acrylic"
             className="border-b-2 border-black  mb-2 px-4"
           >
             <AccordionTrigger className="text-black flex justify-between items-center hover:no-underline">
-              AGB (Terms and Conditions)
+              Acrylic
             </AccordionTrigger>
-            <AccordionContent className="overflow-hidden transition-all duration-500 ease-in-out">
-              {/* Display Impressum component when this accordion is clicked */}
-              <AGB />
-            </AccordionContent>
+            <AccordionContent className="overflow-hidden transition-all duration-500 ease-in-out"></AccordionContent>
           </AccordionItem>
 
-          {/* Datenschutz Section */}
+          {/* Watercolour Section */}
           <AccordionItem
-            value="datenschutz"
+            value="Watercolour"
             className="border-b-60 border-black  px-4"
           >
             <AccordionTrigger className="text-black flex justify-between items-center hover:no-underline">
-              Datenschutz (Privacy Policy)
+              Watercolour
             </AccordionTrigger>
-            <AccordionContent className="overflow-hidden transition-all duration-500 ease-in-out">
-              <p>
-                Your privacy is important to us. This section outlines how we
-                handle your data.
-              </p>
-            </AccordionContent>
+            <AccordionContent className="overflow-hidden transition-all duration-500 ease-in-out"></AccordionContent>
           </AccordionItem>
         </Accordion>
       </main>

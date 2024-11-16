@@ -3,6 +3,7 @@ export default function AGB() {
     <div>
       AGB (Allgemeine Geschäftsbedingungen) for Peas of Art
       <br />
+      <br />
       1. General
       <br />
       Welcome to Peas of Art! These terms and conditions apply to the use of our
@@ -79,8 +80,13 @@ export default function AGB() {
       For any questions or concerns about these terms, please contact us at:
       <br />
       <br />
-      Peas of Art Lappenbergsallee 8A 20257, Hamburg, Germany Email:
-      Stadel.Katja@gmx.de Phone: +49 (0) 151 28917913
+      Peas of Art <br /> Lappenbergsallee 8A <br />
+      20257, <br />
+      Hamburg, <br />
+      Germany
+      <br /> Email: Stadel.Katja@gmx.de
+      <br />
+      Phone: +49 (0) 151 28917913
     </div>
   );
 }
