@@ -12,7 +12,9 @@ export default function Oils() {
   return (
     <div className="w-full max-w-4xl mx-auto my-8 relative bg-black">
       <Carousel>
-        <CarouselContent className="flex justify-center items-center">
+        {/* Centering Carousel Content */}
+        <CarouselContent className="flex justify-center items-center h-[400px]">
+          {/* Carousel Items */}
           <CarouselItem className="flex justify-center items-center">
             <Image
               src="/IMG_20240204_134257.jpg"
@@ -44,19 +46,18 @@ export default function Oils() {
           </CarouselItem>
         </CarouselContent>
 
-        {/* Carousel Previous Button */}
-        <div className="absolute left-0 bottom-0 mb-4 transform -translate-x-1/2 z-10">
-          <CarouselPrevious>
-            <Button variant="outline">Prev</Button>
-          </CarouselPrevious>
-        </div>
+        {/* Navigation Buttons */}
+        <CarouselPrevious className="absolute bottom-4 left-1/2 transform -translate-x-full z-20">
+          <Button variant="outline" className="text-white">
+            Prev
+          </Button>
+        </CarouselPrevious>
 
-        {/* Carousel Next Button */}
-        <div className="absolute right-0 bottom-0 mb-4 transform translate-x-1/2 z-10">
-          <CarouselNext>
-            <Button variant="outline">Next</Button>
-          </CarouselNext>
-        </div>
+        <CarouselNext className="absolute bottom-4 right-1/2 transform translate-x-full z-20">
+          <Button variant="outline" className="text-white">
+            Next
+          </Button>
+        </CarouselNext>
       </Carousel>
     </div>
   );

@@ -18,12 +18,12 @@ export default function Gallery() {
           {/* Oil Section */}
           <AccordionItem
             value="Oil"
-            className="border-b-2 border-black  mb-2 px-0"
+            className="border-b-2 border-black  mb-2 px-4"
           >
             <AccordionTrigger className="text-black flex justify-between items-center hover:no-underline">
               Oil
             </AccordionTrigger>
-            <AccordionContent className="overflow-hidden transition-all duration-500 ease-in-out">
+            <AccordionContent className=" transition-all duration-500 ease-in-out">
               <Oils />
             </AccordionContent>
           </AccordionItem>
@@ -36,7 +36,7 @@ export default function Gallery() {
             <AccordionTrigger className="text-black flex justify-between items-center hover:no-underline">
               Acrylic
             </AccordionTrigger>
-            <AccordionContent className="overflow-hidden transition-all duration-500 ease-in-out"></AccordionContent>
+            <AccordionContent className=" transition-all duration-500 ease-in-out"></AccordionContent>
           </AccordionItem>
 
           {/* Watercolour Section */}
@@ -47,7 +47,7 @@ export default function Gallery() {
             <AccordionTrigger className="text-black flex justify-between items-center hover:no-underline">
               Watercolour
             </AccordionTrigger>
-            <AccordionContent className="overflow-hidden transition-all duration-500 ease-in-out"></AccordionContent>
+            <AccordionContent className=" transition-all duration-500 ease-in-out"></AccordionContent>
           </AccordionItem>
         </Accordion>
       </main>

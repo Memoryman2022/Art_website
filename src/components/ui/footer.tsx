@@ -5,27 +5,27 @@ export default function Footer() {
   return (
     <footer className="fixed bottom-0 left-0 w-full h-20 bg-gray-900 opacity-80 text-white flex items-center justify-around px-4 py-2">
       <nav className="flex gap-4">
-        <Image
-          aria-hidden
-          src="/contact.png"
-          alt="Globe icon"
-          width={28}
-          height={28}
-        />
-        <Link href="/contact" className="hidden md:block">
-          Contact
+        <Link href="/contact" className="flex items-center gap-2">
+          <Image
+            aria-hidden
+            src="/contact.png"
+            alt="Globe icon"
+            width={28}
+            height={28}
+          />
+          <span className="hidden md:block">Contact</span>
         </Link>
       </nav>
       <nav className="flex gap-4">
-        <Image
-          aria-hidden
-          src="/legal.png"
-          alt="Globe icon"
-          width={28}
-          height={28}
-        />
-        <Link href="/legal" className="hidden md:block">
-          legal
+        <Link href="/legal" className="flex items-center gap-2">
+          <Image
+            aria-hidden
+            src="/legal.png"
+            alt="Globe icon"
+            width={28}
+            height={28}
+          />
+          <span className="hidden md:block">legal</span>
         </Link>
       </nav>
       <a

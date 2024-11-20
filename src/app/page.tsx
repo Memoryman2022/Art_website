@@ -1,9 +1,6 @@
 import Image from "next/image";
-import { cn } from "app/lib/utils";
-import classes from "./myCss.module.css";
 import Link from "next/link";
-//components
-
+// components
 import {
   Menubar,
   MenubarMenu,
@@ -14,31 +11,22 @@ import {
   MenubarShortcut,
 } from "components/ui/menubar";
 
-//pages
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main>
+    <div className="min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      {/* Main content below the header */}
+      <main className="flex flex-col gap-16 mt-40 border-[40px] border-black">
         {" "}
-        <Menubar>
-          <MenubarMenu>
-            <MenubarTrigger>File</MenubarTrigger>
-            <MenubarTrigger asChild>
-              <Link href="/gallery">Gallery</Link>
-            </MenubarTrigger>
-            <MenubarContent>
-              <MenubarItem>
-                New Tab <MenubarShortcut>⌘T</MenubarShortcut>
-              </MenubarItem>
-              <MenubarItem>New Window</MenubarItem>
-              <MenubarSeparator />
-              <MenubarItem>Share</MenubarItem>
-              <MenubarSeparator />
-              <MenubarItem>Print</MenubarItem>
-            </MenubarContent>
-          </MenubarMenu>
-        </Menubar>
+        {/* Added margin-top of 40px */} {/* Full-width image */}
+        <div style={{ position: "relative", width: "100%" }}>
+          <Image
+            src="/IMG-20220131-WA0003.jpg"
+            alt="water_woman"
+            layout="responsive"
+            width={1920}
+            height={1080}
+          />
+        </div>
       </main>
     </div>
   );

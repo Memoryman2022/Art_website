@@ -8,7 +8,7 @@ body {
 
 @layer base {
   :root {
-    --background: 72 14% 33%;
+    --background: 40 95% 93%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -33,6 +33,7 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --light-cream: hsl(40, 90%, 95%);
   }
   .dark {
     --background: 0 0% 3.9%;
