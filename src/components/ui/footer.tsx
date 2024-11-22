@@ -1,48 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
+import Mail from "components/mail";
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 w-full h-20 bg-gray-900 opacity-80 text-white flex items-center justify-around px-4 py-2">
-      <nav className="flex gap-4">
-        <Link href="/contact" className="flex items-center gap-2">
-          <Image
-            aria-hidden
-            src="/contact.png"
-            alt="Globe icon"
-            width={28}
-            height={28}
-          />
-          <span className="hidden md:block">Contact</span>
-        </Link>
-      </nav>
-      <nav className="flex gap-4">
-        <Link href="/legal" className="flex items-center gap-2">
-          <Image
-            aria-hidden
-            src="/legal.png"
-            alt="Globe icon"
-            width={28}
-            height={28}
-          />
-          <span className="hidden md:block">legal</span>
-        </Link>
-      </nav>
-      <a
-        className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-        href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          aria-hidden
-          src="/globe.svg"
-          alt="Globe icon"
-          width={16}
-          height={16}
-        />
-        <span className="hidden md:inline">Go to nextjs.org →</span>{" "}
-      </a>
+    <footer className="fixed bottom-0 left-0 w-full h-40 bg-gray-900 opacity-80 text-white flex flex-col items-center justify-around px-4 py-2 z-50">
+      {/* Mail Subscription */}
+      <Mail />
+
+      {/* Copyright Notice */}
+      <p className="text-sm  md:block">© 2024 by Katja Stadel</p>
     </footer>
   );
 }
