@@ -1,21 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
-// components
-import {
-  Menubar,
-  MenubarMenu,
-  MenubarTrigger,
-  MenubarContent,
-  MenubarItem,
-  MenubarSeparator,
-  MenubarShortcut,
-} from "components/ui/menubar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen pb-20  font-[family-name:var(--font-geist-sans)]">
       {/* Main content below the header */}
-      <main className="flex flex-col gap-16 mt-40 border-[40px] border-black">
+      <main className="flex flex-col gap-16 mt-40  border-black">
         {" "}
         {/* Added margin-top of 40px */} {/* Full-width image */}
         <div style={{ position: "relative", width: "100%" }}>

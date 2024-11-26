@@ -31,9 +31,7 @@ export default function RootLayout({
       <Header />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        style={{
-          padding: "80px 40px 60px 40px",
-        }}
+        style={{}}
       >
         <br />
         {children}
