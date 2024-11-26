@@ -9,6 +9,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      spacing: { "header-height": "64px" },
       fontFamily: {
         custom: ["CustomFont", "Arial", "Helvetica", "sans-serif"],
       },

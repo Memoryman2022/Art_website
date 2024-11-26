@@ -6,16 +6,16 @@ import { Menubar, MenubarMenu, MenubarTrigger } from "components/ui/menubar";
 
 export default function Header() {
   return (
-    <header className="font-custom fixed top-0 left-0 w-full bg-[hsl(var(--background))] opacity-90 text-[hsl(40,9%,9%)] flex flex-col items-center py-4 z-50 shadow-md">
+    <header className="font-custom fixed top-0 left-0 w-full h-64 bg-white text-black flex flex-col items-center justify-between py-6 z-50 shadow-md">
       {/* Main Title */}
-      <nav className="flex justify-center w-full mb-4">
-        <Link href="/" className="text-2xl font-bold tracking-wide">
-          Peas of Art
+      <nav className="flex justify-center items-center w-full h-64">
+        <Link href="/" className="text-3xl text-gray-400 tracking-wide">
+          PEAS OF ART{" "}
         </Link>
       </nav>
 
       {/* Menubar */}
-      <Menubar className="border-none shadow-none bg-transparent flex justify-around w-full max-w-md">
+      <Menubar className="border-none text-gray-400 shadow-none bg-transparent flex justify-around w-full max-w-md pb-12">
         {/* Menu Items */}
         <MenubarMenu>
           <MenuItem href="/" iconSrc="/home.png" label="Home" />
@@ -56,7 +56,7 @@ function MenuItem({
             height={32}
           />
         </div>
-        <span className="text-sm mt-2">{label}</span>
+        <span className="text-sm ">{label}</span>
       </Link>
     </MenubarTrigger>
   );
