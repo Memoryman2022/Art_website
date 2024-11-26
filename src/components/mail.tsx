@@ -1,16 +1,16 @@
 export default function Mail() {
   return (
-    <div>
-      <span className="p-">mailing list</span>
-      <form className="flex items-center">
+    <div className="flex items-center space-x-4">
+      <span className="text-sm font-semibold text-white">Mailing List</span>
+      <form className="flex items-center space-x-2">
         <input
           type="email"
           placeholder="Enter your email"
-          className="px-4 py-2  border border-gray-300"
+          className="text-sm px-4 py-2 border border-gray-300 text-gray-700 "
         />
         <button
           type="submit"
-          className="px-4 py-2 bg-gray-900 text-white  hover:bg-gray-600"
+          className="text-sm px-4 py-2 bg-gray-900 text-white hover:bg-gray-600 rounded-md"
         >
           Subscribe
         </button>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen pb-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen  font-[family-name:var(--font-geist-sans)]">
       {/* Main content below the header */}
       <main className="flex flex-col  pt-header-height border-black">
         {/* Full-width image with overlay - Oils */}
