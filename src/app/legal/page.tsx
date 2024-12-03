@@ -10,7 +10,11 @@ import AGB from "AGB/agb";
 
 export default function Legal() {
   return (
-    <div className="min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div
+      className="min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
+      style={{ paddingTop: "264px" }}
+    >
+      {" "}
       <main>
         <Accordion
           type="single"
