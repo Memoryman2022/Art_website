@@ -21,7 +21,7 @@ export default function Header() {
           <MenuItem href="/" iconSrc="/home.png" label="Home" />
         </MenubarMenu>
         <MenubarMenu>
-          <MenuItem href="/Gallery" iconSrc="/gallery.png" label="Gallery" />
+          <MenuItem href="/gallery" iconSrc="/gallery.png" label="Gallery" />
         </MenubarMenu>
         <MenubarMenu>
           <MenuItem href="/contact" iconSrc="/contact.png" label="Contact" />

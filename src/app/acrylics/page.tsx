@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Oils() {
+export default function Acrylics() {
   const [paintings, setPaintings] = useState<
     { src: string; alt: string; link: string }[]
   >([]);
@@ -11,7 +11,7 @@ export default function Oils() {
   useEffect(() => {
     const fetchPaintings = async () => {
       try {
-        const response = await fetch("/api/getPaintings?category=oils");
+        const response = await fetch("/api/getPaintings?category=acrylics");
         if (response.ok) {
           const data = await response.json();
           setPaintings(data); // Set fetched paintings to state
@@ -38,13 +38,17 @@ export default function Oils() {
             href={painting.link}
             className="relative block w-full h-64 overflow-hidden"
           >
-            <Image
-              src={painting.src}
-              alt={painting.alt}
-              fill
-              className="transition-transform duration-300 ease-out transform hover:scale-110"
-              style={{ objectFit: "cover" }}
-            />
+            {/* Add the sizes prop for performance optimization */}
+            <div className="relative w-full h-full">
+              <Image
+                src={painting.src}
+                alt={painting.alt}
+                fill
+                className="transition-transform duration-300 ease-out transform hover:scale-110"
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Add sizes prop
+              />
+            </div>
           </Link>
         ))}
       </div>
