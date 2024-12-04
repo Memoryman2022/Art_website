@@ -5,7 +5,13 @@ import Link from "next/link";
 
 export default function Acrylics() {
   const [paintings, setPaintings] = useState<
-    { src: string; alt: string; link: string }[]
+    {
+      src: string;
+      alt: string;
+      link: string;
+      title: string;
+      category: string;
+    }[]
   >([]);
 
   useEffect(() => {
@@ -35,7 +41,15 @@ export default function Acrylics() {
         {paintings.map((painting, index) => (
           <Link
             key={index}
-            href={painting.link}
+            href={{
+              pathname: `/individualPainting/${index}`,
+              query: {
+                src: painting.src,
+                alt: painting.alt,
+                title: `Painting ${index + 1}`,
+                category: "Acrylics",
+              },
+            }}
             className="relative block w-full h-64 overflow-hidden"
           >
             {/* Add the sizes prop for performance optimization */}

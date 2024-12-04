@@ -17,8 +17,9 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-gray-400 transition-colors px-4" // Added padding to the icon
-        ></a>
-        <FaInstagram size={24} />
+        >
+          <FaInstagram size={24} />
+        </a>
       </div>
     </footer>
   );

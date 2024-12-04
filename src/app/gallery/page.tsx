@@ -46,7 +46,7 @@ export default function Gallery() {
 
   return (
     <div
-      className="min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]"
+      className="min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-grey-700"
       style={{ paddingTop: "264px" }}
     >
       <main>
